@@ -1,0 +1,32 @@
+{
+    "model": "resnet",
+    "dataloaders": {
+        "batch_size": 16,
+        "shuffle": true,
+        "num_workers": 8,
+        "use_custom_transforms": true
+    },
+    "training": {
+        "epochs": 1,
+        "criterion": "MAE",
+        "lr": 1e-5,
+	"weight_decay": 0,
+        "use_scheduler": true,
+        "scheduler_step_size": 12,
+        "lr_decay_rate": 0.1,
+        "use_estop": true,
+        "estop_num_epochs": 3
+    },
+    "filepaths": {
+        "data_dir_path": "../../../teams/a01/extra/",
+        "hdf5_stem": "bnpp_frontalonly_1024_",
+        "train_dataset": "data/BNPP_DT_train_with_ages.csv",
+        "val_dataset": "data/BNPP_DT_val_with_ages.csv",
+        "test_dataset": "data/BNPP_DT_test_with_ages.csv",
+        "results_csv_path": "results/results.csv",
+        "saved_weights_path": "weights/best_weights.pt",
+        "loss_plot_path": "plots/loss_plot_test.png",
+        "results_plot_path": "plots/results_plot_test.png",
+        "combined_plot_path": "plots/combined_plot_test.png"
+    }
+}

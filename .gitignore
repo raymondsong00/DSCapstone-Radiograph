@@ -1,0 +1,9 @@
+*.png
+*.pt
+results/*.csv
+*.txt
+*.ipynb
+.ipynb_checkpoints/*
+__pycache__/*
+configs/*.json
+!configs/config.json

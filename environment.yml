@@ -1,0 +1,17 @@
+name: 180a-A01
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.5
+  - torchaudio
+  - pytorch-cuda=11.8
+  - torchvision
+  - pytorch
+  - tqdm
+  - numpy==1.22.4
+  - pandas==2.0.3
+  - matplotlib==3.4.2
+  - h5py==3.3.0
+  - regex==2023.8.8
+  - scikit-learn
+prefix: /home/rysong/.conda/envs/180a-A01
