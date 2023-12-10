@@ -19,8 +19,10 @@ python3 main.py --config configs/my_new_config.json
 
 Output
 ```
-results.csv - Predictions of ln(BNPP + 1) values and actual ln(BNPP + 1) values
-Loss_results_plot.png - Training Loss plot and regression plot
+results/results.csv - Predictions of ln(BNPP + 1) values and actual ln(BNPP + 1) values
+plots/results_plot_test.png - Regression plot of predicted vs actual ln BNPP
+plots/loss_plot_test.png - Training and Validation loss plot
+plots/combined_plot_test.png - Loss and Regression plot in the same image
 log.txt - Outputs of epoch loss for train and validation sets
 best_model_params.pt - Saved weights from model with lowest validation loss
 ```
@@ -41,6 +43,7 @@ python3 xray_main.py test_model --config my_new_config.json
 ```
 
 Will load the saved_weights from `my_new_config.json` and then predict on the test dataset
+
 
 ## Image Transformations:
 Modify image transformations in `transforms.py` with PyTorch Transformations.
