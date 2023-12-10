@@ -7,18 +7,19 @@
         "use_custom_transforms": true
     },
     "training": {
-        "epochs": 1,
+        "start_epoch": 0,
+        "end_epoch": 25,
         "criterion": "MAE",
         "lr": 1e-5,
 	"weight_decay": 0,
         "use_scheduler": true,
-        "scheduler_step_size": 12,
+        "scheduler_step_size": 8,
         "lr_decay_rate": 0.1,
         "use_estop": true,
-        "estop_num_epochs": 3
+        "estop_num_epochs": 2
     },
     "filepaths": {
-        "data_dir_path": "../../../teams/a01/extra/",
+        "data_dir_path": "../../teams/a01/extra/",
         "hdf5_stem": "bnpp_frontalonly_1024_",
         "train_dataset": "data/BNPP_DT_train_with_ages.csv",
         "val_dataset": "data/BNPP_DT_val_with_ages.csv",
