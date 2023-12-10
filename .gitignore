@@ -3,6 +3,7 @@
 results/*.csv
 *.txt
 *.ipynb
+!plot_auc.ipynb
 .ipynb_checkpoints/*
 __pycache__/*
 configs/*.json
