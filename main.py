@@ -12,7 +12,7 @@ from transforms import *
 parser = argparse.ArgumentParser()
 
 parser.add_argument('build_target', nargs='*', default='all')
-parser.add_argument('--config', type=str, default='config.json')
+parser.add_argument('--config', type=str, default='configs/config.json')
 
 args = vars(parser.parse_args())
 
